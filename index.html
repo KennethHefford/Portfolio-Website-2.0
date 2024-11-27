@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khefford.io</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/0ab61b7aac.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "0M6daoKsNSVH3YOD3",
+      });
+   })();
+</script>
+</head>
+<body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+      <nav>
+        <figure>
+          <img id="personal-logo" src="./assets/kh.svg" alt="">
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a href="#" class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black
+            ">About</a>
+          </li>
+          <li class="nav__link">
+            <a href="#projects" class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black
+            ">Projects</a>
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a href="#" class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black
+            ">Contact</a>
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a href="#" class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black
+            "><i class="fas fa-adjust"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey!</h1>
+          <h1 class="title orange">I'm Kenny!</h1>
+          <p class="header__para">
+            I'm a <b class="orange">Full Stack Developer</b> I'm passionate about creating innovative solutions to complex problems and building user-friendly applications.
+
+            <br>
+            Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
+          </p>
+          <div class="social__list">
+            <a href="https://www.linkedin.com/in/kennethhefford" target="_blank" class="social__link click">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/kennethhefford" target="_blank" class="social__link click">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="./assets/Kenneth Hefford Technical Resume.pdf" target="_blank" class="social__link click">
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+          <h4 class="modal__sub-title modal__sub-title--about">Full Stack Software Engineer.</h4>
+          <p class="modal__para">
+            I am an up and coming <b class="orange">Full Stack Developer</b> with the dedication to bringing your company's vision 
+            <br>
+            I have a passion for creating web applications that are <b class="orange">user-friendly, responsive, scalable</b>.
+            I enjoy working on both the <b class="orange">Frontend</b> and <b class="orange">Backend</b> of a website, using a variety of technologies and frameworks.</p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt="">
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt="">
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt="">
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img"
+                src="./assets/PYTHON STACK.png" alt="">
+              <span class="language__name">Python</span>
+            </figure>
+  
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/220px-Node.js_logo.svg.png" alt="">
+              <span class="language__name">Node.js</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt="">
+              <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/220px-Flask_logo.svg.png" alt="">
+              <span class="language__name">Flask</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Expressjs.png/220px-Expressjs.png" alt="">
+              <span class="language__name">Express.js</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">
+            Let's have a chat!
+          </h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities.
+          </h3>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+        </div>
+      </div>
+      <img src="./assets/semi circle.svg" class="shape shape--0">
+      <img src="./assets/circle.svg" class="shape shape--1">
+      <img src="./assets/squiggly.svg" class="shape shape--2">
+      <img src="./assets/circle.svg" class="shape shape--3">
+      <img src="./assets/triangle.svg" class="shape shape--4">
+      <img src="./assets/circle.svg" class="shape shape--5">
+      <img src="./assets/squiggly.svg" class="shape shape--6">
+      <img src="./assets/circle.svg" class="shape shape--7">
+      <img src="./assets/semi circle.svg" class="shape shape--8">
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="orange">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/code.jpg" class="project__img" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Airtasker API
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Python, Flask, SQLAlchemy, PostgreSQL, Insomnia, Marshmallow
+                  </h4>
+                  <p class="project__description--para">
+                    The Airtasker API web server developed in this project adeptly handles job postings, job requests, and user reviews. Leveraging core server concepts such as routing and data communication between users and a database, this API server is built using Flask and integrates seamlessly with a relational database via SQLAlchemy ORM. It offers a structured, efficient approach to managing CRUD operations for job-related data, ensuring secure and organised data management. This project showcases the ability to develop a robust web API server that centralises job-related data, streamlining the process for users to discover and manage job opportunities and reviews effortlessly.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/KennethHefford/KennethHefford_T2A2-Airtasker-API" target="_blank" class="project__description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/build website.png" class="project__img" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    First Portfolio Website
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Netlify
+                  </h4>
+                  <p class="project__description--para">
+                    My first Portfolio website. The Purpose of this Portfolio Website is to showcase my best work, what services I offer, and my experience to my target audience being a potential employer or client. This Portfolio Website will further demonstrate my capability to be an asset to a company or client in the case of freelancing services.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/KennethHefford/KennethHefford_T1A2" target="_blank" class="project__description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://khefford.netlify.app/" target="_blank" class="project__description--link">
+                        <i class="fas fa-link"></i>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+                <div class="project__wrapper">
+                  <img src="./assets/app.jpg" class="project__img" alt="">
+                  <div class="project__wrapper--bg"></div>
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Gents and Rascals Course Website and App
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      Html, CSS, JavaScript, React, Node.js, Express.js
+                    </h4>
+                    <p class="project__description--para">
+                      Watch this space for more information.
+                    </p>
+                    <div class="project__description--links">
+                      <a href="https://github.com/KennethHefford/" target="_blank" class="project__description--link">
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://github.com/KennethHefford/" target="_blank" class="project__description--link">
+                          <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <a href="#" class="footer__anchor">
+            <figure class="footer__logo">
+              <img src="./assets/KH.svg" class="footer__logo--img" alt="">
+            </figure>
+            <span class="footer__logo--popper">
+              Top
+              <i class="fas fa-arrow-up"></i>
+            </span>
+          </a>
+          <div class="footer__social--list">
+            <a href="https://github.com/kennethhefford" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+          ">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/kennethhefford" target="_blank" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+          ">
+              LinkedIn
+            </a>
+            <a href="#" onclick="toggleModal()" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+          ">
+              Contact
+            </a>
+            <a href="./assets/Kenneth Hefford Technical Resume.pdf" target="_blank" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+          ">
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">Copyright &copy; 2024 Kenneth Hefford</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  
+  </html>
